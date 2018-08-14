@@ -11,17 +11,21 @@
 
 <script>
   var output = document.getElementById("output");
-  var answer = prompt("How many times do you want me to loop?");
+  // var answer = prompt("How many times do you want me to loop?");
+  // answer = Number(answer);
 
-  var x = 0;
+  var x = 0; // 0 is our first even number
   do { 
+    if(x % 2 === 0){
     output.innerHTML += "value x ="+x+"<br>";
+    }
     x++;
   }
 
   // while(x < 10); // while this condition is true do this
-  while(x < answer);
-  output.innerHTML += "Final value of x ="+x+"<br>"; // Final value of x =10
+  // while(x < answer); // Final value of x =8 if you put in 8 for how many times you want to loop
+  while(x < 30); // return an even number = 0,2,4,6....final value is 30
+  output.innerHTML += "Final value of x ="+x+"<br>"; // Final value of x =10 
 
 </script>
 

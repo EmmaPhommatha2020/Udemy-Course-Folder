@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>While Loop</title>
+</head>
+
+<body>
+
+  <div id="output"></div>
+
+  <script>
+
+    // ••• While : loops through a block of code while a specified condition is true ••• //
+    var output = document.getElementById("output");
+    // var answer = prompt("How many times should I loop?");
+
+    var x = 1; 
+    while (x < answer) { // this code won't get executed if this condition is not true 
+      output.innerHTML += "Value of x = "+x+"<br>";
+      x++;
+    }
+  output.innerHTML += "Final value of x ="+x+"<br>"; // Final value of x =7 if put in #7
+  // if put in something that's not a number Final value of x =1 it doesn't actually loop through x so x did not change.
+  </script>
+</body>
+
+</html>

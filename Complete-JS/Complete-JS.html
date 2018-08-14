@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Complete JavaScript Course</title>
+  <title>Do While</title>
 </head>
+
 <body>
   <div id="output"></div>
 
-<script>
-  var output = document.getElementById("output");
-  // var answer = prompt("How many times do you want me to loop?");
-  // answer = Number(answer);
+  <script>
 
-  var x = 0; // 0 is our first even number
-  do { 
-    if(x % 2 === 0){
-    output.innerHTML += "value x ="+x+"<br>";
+    // ••• Do While : loops through a block of code once, and then repeats the loop while a specified condition is true ••• //
+
+    var output = document.getElementById("output");
+    // var answer = prompt("How many times do you want me to loop?");
+    // answer = Number(answer);
+
+    var x = 0; // 0 is our first even number 
+    do {
+      if (x % 2 === 0) { // if you want to run this code sitting here use DO While Loop, if not just use While loop
+        output.innerHTML += "value x =" + x + "<br>";
+      }
+      x++;
     }
-    x++;
-  }
 
-  // while(x < 10); // while this condition is true do this
-  // while(x < answer); // Final value of x =8 if you put in 8 for how many times you want to loop
-  while(x < 30); // return an even number = 0,2,4,6....final value is 30
-  output.innerHTML += "Final value of x ="+x+"<br>"; // Final value of x =10 
+    // while(x < 10); // while this condition is true do this
+    // while(x < answer); // Final value of x =8 if you put in 8 for how many times you want to loop
+    while (x < 30); // return an even number = 0,2,4,6....final value is 30
+    output.innerHTML += "Final value of x =" + x + "<br>"; // Final value of x =10 
 
-</script>
+  </script>
 
 </body>
+
 </html>

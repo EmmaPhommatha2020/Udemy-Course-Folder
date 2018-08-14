@@ -17,14 +17,21 @@
     // ••• While : loops through a block of code while a specified condition is true ••• //
     var output = document.getElementById("output");
     // var answer = prompt("How many times should I loop?");
+    var secret = "javascript";
+    var crackCode = prompt("What is the secret word?")
 
-    var x = 1; 
-    while (x < answer) { // this code won't get executed if this condition is not true 
-      output.innerHTML += "Value of x = "+x+"<br>";
-      x++;
+    //   var x = 1; 
+    //   while (x < answer) { // this code won't get executed if this condition is not true 
+    //     output.innerHTML += "Value of x = "+x+"<br>";
+    //     x++;
+    //   }
+    // output.innerHTML += "Final value of x ="+x+"<br>"; // Final value of x =7 if put in #7
+    // if put in something that's not a number Final value of x =1 it doesn't actually loop through x so x did not change.
+
+    while (crackCode != secret) {
+      crackCode = prompt("Guess again?")
     }
-  output.innerHTML += "Final value of x ="+x+"<br>"; // Final value of x =7 if put in #7
-  // if put in something that's not a number Final value of x =1 it doesn't actually loop through x so x did not change.
+    output.innerHTML += "Final output"; // put in javascript as a secret word to get the Final output
   </script>
 </body>
 

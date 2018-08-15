@@ -15,11 +15,29 @@
     // ••• For : loops through a block of code a number of times ••• //
 
     var output = document.getElementById("output");
+    var caloriesBanana = 89;
+    var bananas = prompt("How many bananas do you want to eat?");
+    var total = 0;
+    var holder;
 
-    for (var x = 0; x < 10; x++) {
-      output.innerHTML += "Value of x is =" + x + "<br>";
-      
+
+    // for (var x = 0; x < 10; x++) {
+    //   output.innerHTML += "Value of x is =" + x + "<br>";
+    // }
+
+    // for (var x = 0; x <= 31; x++) { 
+    //   if (x % 2 !== 0) { // odds numbers = 1,3,5,7...29
+    //     output.innerHTML += "Value of x is =" + x + "<br>";
+    //   }
+    // }
+
+    for (var x = 1; x <= bananas; x++) {
+      total += caloriesBanana;
+      holder = x > 1 ? "bananas another" : "banana" 
+      output.innerHTML += "You ate " +x+ " "+holder +"  "+caloriesBanana+" Calories added to your total now at "+total+ "<br>";
+
     }
+    output.innerHTML += "Your total calories count is" +total; 
 
   </script>
 

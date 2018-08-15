@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nested Loop</title>
+  <style>
+    td {border: 1px solid red;}
+  </style>
+</head>
+
+<body>
+  <div id="output"></div>
+  <script>
+    // ••• Nested : loop inside of loop //
+
+    var output = document.getElementById("output");
+    var html = "<table";
+
+    for (var row = 0; row < 10; row++) {
+      html += "<tr";
+      for (var col = 0; col < 2; col++) {
+        html += "<td>Cell=" + col + "</td>";
+      }
+      html += "<tr>";
+    }
+
+    html += "</table>";
+    output.innerHTML = html;
+
+
+  </script>
+</body>
+
+</html>
